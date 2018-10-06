@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const Blockchain = require('../blockchain');
+const path = require('path');
 
 const HTTP_PORT = process.env.HTTP_PORT || 3001;
 
