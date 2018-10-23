@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import '../styles/mine-block.css';
 
 class MineBlockComponent extends React.Component{
     constructor(props) {
@@ -35,11 +36,13 @@ class MineBlockComponent extends React.Component{
     render() {
         return (
         <form onSubmit={this.handleSubmit}>
+        <div class="form-group">
             <label>
-                Block Data:
+                <strong>Block Data:</strong>
             </label>
-            <input type="text" value={this.state.data} onChange={this.handleChange}/>
-            <input type="submit" value="Mine Blocks"/>
+            <input class="form-control" type="text" placeholder="Enter block data" value={this.state.data} onChange={this.handleChange}/>
+            <input class="btn btn-outline-secondary mine-block-btn" type="submit" value="Mine Blocks"/>
+            </div>
         </form>
         )
     }

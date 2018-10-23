@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import Home from './home.component';
 import BlockContainer from './block-container.component';
-import MineBlockComponent from './mine-block.component';
+import MineBlockContainer from './mine-block-container.component';
 import '../styles/navbar.css'
 
 class NavBarComponent extends React.Component{
@@ -27,7 +27,7 @@ class NavBarComponent extends React.Component{
             <div className="App-intro">
           <Route exact path="/" component={Home}/>
           <Route path="/blocks" component={BlockContainer}/>
-          <Route path="/mine-blocks" component={MineBlockComponent}/>
+          <Route path="/mine-blocks" component={MineBlockContainer}/>
         </div>
         </div>
         

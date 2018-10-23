@@ -2,12 +2,13 @@ import React from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
 import { bindActionCreators } from '../../../node_modules/redux';
-import { testState, fetchBlocks } from './../store/actions'
+import { testState, fetchBlocks } from './../store/actions';
+import '../styles/block-container.css';
 
 class ButtonComponent extends React.Component{
     handleClick() {
         console.log('did this click?')
-        this.props.testState('sup')
+        //this.props.testState('sup')
         this.getBlockList();
     }
 
@@ -21,7 +22,7 @@ class ButtonComponent extends React.Component{
 
     render() {
         return(
-            <button onClick={() => this.handleClick()}>
+            <button class="btn btn-outline-secondary get-block-button" onClick={() => this.handleClick()}>
               Get Blocks
             </button>
         )
