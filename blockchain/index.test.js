@@ -3,6 +3,7 @@ const Block = require('./block');
 
 describe('Blockchain', () => {
     let bc;
+    let bc2;
 
     beforeEach(() => {
         bc = new Blockchain();
