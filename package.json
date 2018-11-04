@@ -10,6 +10,9 @@
     "dev-server": "nodemon ./server",
     "webpack": "webpack-dev-server --open --mode development --config webpack.config.js"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
