@@ -10,6 +10,7 @@ const HTTP_PORT = process.env.HTTP_PORT || 3001;
 const app = express();
 const bc = new Blockchain();
 const p2pServer = new P2pServer(bc);
+const wallet = new wallet();
 
 app.use(cors(), bodyParser.json());
 
