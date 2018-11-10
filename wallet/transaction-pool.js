@@ -4,10 +4,10 @@ class TransactionPool {
     }
 
     updateOrAddTransaction(transaction) {
-        let transactionWitId = this.transactions.find(t => t.id);
+        let transactionWithId = this.transactions.find(t => t.id);
 
-        if (transactionWitId) {
-            this.transactions[this.indexOf(transactionWitId)] = transaction;
+        if (transactionWithId) {
+            this.transactions[this.transactions.indexOf(transactionWithId)] = transaction;
         } else {
             this.transactions.push(transaction);
         }
