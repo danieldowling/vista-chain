@@ -3,6 +3,7 @@ import { Route, Link } from 'react-router-dom';
 import Home from './home.component';
 import BlockContainer from './block-container.component';
 import MineBlockContainer from './mine-block-container.component';
+import PublicKeyContainer from './public-key-container.component';
 import '../styles/navbar.css'
 
 class NavBarComponent extends React.Component{
@@ -21,14 +22,18 @@ class NavBarComponent extends React.Component{
                 <div class="d-inline-flex p-2">
                     <li class="nav-item"> <Link class="nav-link" to="/mine-blocks">Mine Blocks</Link> </li>
                 </div>
+                <div class="d-inline-flex p-2">
+                    <li class="nav-item"> <Link class="nav-link" to="/public-key">Get Public Key</Link> </li>
+                </div>
                 </div>
                 </ul>
             </div>
             <div className="App-intro">
-          <Route exact path="/" component={Home}/>
-          <Route path="/blocks" component={BlockContainer}/>
-          <Route path="/mine-blocks" component={MineBlockContainer}/>
-        </div>
+                <Route exact path="/" component={Home}/>
+                <Route path="/blocks" component={BlockContainer}/>
+                <Route path="/mine-blocks" component={MineBlockContainer}/>
+                <Route path="/public-key" component={PublicKeyContainer}/>
+            </div>
         </div>
         
         )

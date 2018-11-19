@@ -8,7 +8,6 @@ import '../styles/block-container.css';
 class ButtonComponent extends React.Component{
     handleClick() {
         console.log('did this click?')
-        //this.props.testState('sup')
         this.getBlockList();
     }
 
